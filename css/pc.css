@@ -1,0 +1,72 @@
+header {
+  background: #000;
+  height: 100px;
+  position: relative;
+}
+
+header .logo{
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  top: 25px;
+}
+
+/* 1단계 */
+#gnb > ul > li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 2단계 */
+#gnb .depth2 > li > a {
+  font-size: 13px;
+}
+
+#gnb {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+}
+
+#gnb > ul > li {
+  float: left;
+  margin-left: 10px;
+  /* outline: 1px solid red; */
+  min-width: 100px;
+  text-align: center;
+}
+
+#gnb > ul > li:last-child {
+  width: auto;
+  margin-left: 30px;
+}
+
+/* 이벤트 버튼 */
+#gnb .event-link {
+  background: #1860c9;
+  display: block;
+  padding: 5px 50px 5px 30px;
+}
+
+#gnb .event-link span {
+  margin-left: 1em;
+}
+
+/* 2단계 메뉴 액션 */
+#gnb .depth2 {
+  display: none;
+  margin-top: 1em;
+}
+
+#gnb .depth2.on {
+  display: block;
+}
+
+#gnb .depth2 > li {
+  margin-bottom: 5px;
+}
+
+#toggle {
+  display: none;
+}

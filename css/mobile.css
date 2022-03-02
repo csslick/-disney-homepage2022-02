@@ -1,0 +1,88 @@
+header {
+  background: #000;
+  height: 80px;
+  position: relative;
+}
+
+header .logo{
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+
+/* 1단계 */
+#gnb > ul {
+  display: none;
+  padding: 20px;
+}
+
+#gnb > ul.on {
+  display: block;
+  background: #333;
+}
+
+#gnb > ul > li > a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  display: block;
+}
+
+/* 2단계 */
+#gnb .depth2 > li > a {
+  font-size: 13px;
+  color: #fff;
+}
+
+#gnb {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+#gnb > ul > li {
+  /* margin-left: 10px; */
+  /* outline: 1px solid red; */
+  min-width: 100px;
+  text-align: center;
+}
+
+#gnb > ul > li:last-child {
+  width: auto;
+}
+
+/* 이벤트 버튼 */
+#gnb .event-link {
+  background: #1860c9;
+  display: block;
+  padding: 5px 10px;
+}
+
+#gnb .event-link span {
+  margin-left: 1em;
+}
+
+/* 2단계 메뉴 액션 */
+#gnb .depth2 {
+  display: none;
+  margin-top: 1em;
+}
+
+#gnb .depth2.on {
+  display: block;
+}
+
+#gnb .depth2 > li {
+  margin-bottom: 5px;
+}
+
+/* 토글버튼 */
+#toggle {
+  background: transparent;
+  border-style: none;
+  position: fixed;
+  right: 20px;
+  top: 32px;
+}
